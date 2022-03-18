@@ -5,6 +5,24 @@ USE chat;
 CREATE TABLE messages (
     message_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     text text,
+    userid INT,
+    roomname text,
+    created_at text
+);
+
+CREATE TABLE usernames (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name text
+);
+
+
+
+
+
+/*
+CREATE TABLE messages (
+    message_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    text text,
     created_at DATETIME
 );
 
@@ -23,7 +41,7 @@ CREATE TABLE joinTable (
     room_id text,
     message_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT
 );
-
+*/
 
 
 /*  Execute this file from the command line by typing:
